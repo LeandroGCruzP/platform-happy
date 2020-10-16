@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 // import { FaWhatsapp } from "react-icons/fa";
-import { FiClock, FiInfo } from "react-icons/fi";
-import { Map, Marker, TileLayer } from "react-leaflet";
+import { FiClock, FiInfo } from 'react-icons/fi';
+import { Map, Marker, TileLayer } from 'react-leaflet';
 import { useParams } from 'react-router-dom';
 
-import Sidebar from "../components/Sidebar";
-import mapIcon from "../utils/mapIcon";
-import api from "../services/api";
+import Sidebar from '../components/Sidebar';
+import mapIcon from '../utils/mapIcon';
+import api from '../services/api';
 
 import '../styles/pages/orphanage.css';
 
@@ -34,14 +34,14 @@ export default function Orphanage() {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   useEffect(() => {
-    api.get(`orphanages/${params.id}`).then(response => {
+    api.get(`orphanages/${params.id}`).then((response) => {
       setOrphanage(response.data);
     });
   }, [params.id]);
 
   if (!orphanage) {
     // Shimmer effect
-    return <p>Carregando ...</p>
+    return <p>Carregando ...</p>;
   }
 
   return (
@@ -55,13 +55,13 @@ export default function Orphanage() {
           <div className="images">
             {orphanage?.images.map((image, index) => {
               return (
-                <button 
-                  key={image.id} 
-                  className={activeImageIndex === index ? 'active' : ''} 
+                <button
+                  key={image.id}
+                  className={activeImageIndex === index ? 'active' : ''}
                   type="button"
                   onClick={() => {
-                    setActiveImageIndex(index)
-                  }}  
+                    setActiveImageIndex(index);
+                  }}
                 >
                   <img src={image.url} alt={orphanage.name} />
                 </button>
@@ -87,11 +87,21 @@ export default function Orphanage() {
                 <TileLayer
                   url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
                 />
-                <Marker interactive={false} icon={mapIcon} position={[orphanage.latitude, orphanage.longitude]} />
+                <Marker
+                  interactive={false}
+                  icon={mapIcon}
+                  position={[orphanage.latitude, orphanage.longitude]}
+                />
               </Map>
 
               <footer>
-                <a target="_blank" rel="noopener noreferrer" href={`https://www.google.com/maps/dir/?api=1&destination=${orphanage.latitude},${orphanage.longitude}`}>Ver rutas en el Google Maps</a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${orphanage.latitude},${orphanage.longitude}`}
+                >
+                  Ver rutas en el Google Maps
+                </a>
               </footer>
             </div>
 
@@ -113,19 +123,18 @@ export default function Orphanage() {
                   fim de semana
                 </div>
               ) : (
-                  <div className="open-on-weekends dont-open">
-                    <FiInfo size={32} color="#FF669D" />
+                <div className="open-on-weekends dont-open">
+                  <FiInfo size={32} color="#FF669D" />
                   No Abrimos los <br />
                   fim de semana
-                  </div>
-                )}
+                </div>
+              )}
             </div>
 
             {/* <button type="button" className="contact-button">
               <FaWhatsapp size={20} color="#FFF" />
               Entrar em contato
             </button> */}
-
           </div>
         </div>
       </main>
