@@ -17,9 +17,8 @@
 <img src="./docs/web_Home.png" width="470" /> <img src="./docs/web_Mapa.png" width="470" />
 <img src="./docs/web_Dados_preechidos.png" width="470" /> <img src="./docs/web_Perfil.png" width="470" />
 ### Mobile
-<img src="./docs/mobile_Mapa.png" width="250" /> <img src="./docs/mobile_Toque_no_mapa.png" width="250" />
-<img src="./docs/mobile_Localização_feita.png" width="250" /> <img src="./docs/mobile_Dados_preechidos.png" width="250" />
-<img src="./docs/mobile_Perfil.png" width="250" />
+<img src="./docs/mobile_Mapa.png" width="225" /><img src="./docs/mobile_Localização_feita.png" width="225" /> 
+<img src="./docs/mobile_Dados_preechidos.png" width="225" /><img src="./docs/mobile_Perfil.png" width="225" />
 
 ## 👷 Para la cración de la plataforma tecnológica se utilizó 👷
 
