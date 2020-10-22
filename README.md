@@ -13,33 +13,22 @@
 ### Estos orfanatos estarán indicados con un icono donde al seleccionar se podrá observar las reglas para visitar ese orfanato y sus horarios.
 
 ## 📸 Preview Versión 1.0 📸
-
-![Home web](./docs/web_Home.png)
-![Mapa web](./docs/web_Mapa.png)
-![Formulario de datos web](./docs/web_Dados.png)
-![Formulario de datos completados web](./docs/web_Dados_preechidos.png)
-![Perfil web](./docs/web_Perfil.png)
-![Mapa mobile](./docs/mobile_Mapa.png)
-![Seleccione punto en el mapa mobile](./docs/mobile_Toque_no_mapa.png)
-![Punto en el mapa seleccionado mobile](./docs/mobile_Localização_feita.png)
-![Formulario de datos mobile](./docs/mobile_Dados.png)
-![Formulario de datos completados mobile](./docs/mobile_Dados_preechidos.png)
-![Perfil mobile](./docs/mobile_Perfil.png)
+### Web
+<img src="./docs/web_Home.png" width="470" /> <img src="./docs/web_Mapa.png" width="470" />
+<img src="./docs/web_Dados_preechidos.png" width="470" /> <img src="./docs/web_Perfil.png" width="470" />
+### Mobile
+<img src="./docs/mobile_Mapa.png" width="250" /> <img src="./docs/mobile_Toque_no_mapa.png" width="250" />
+<img src="./docs/mobile_Localização_feita.png" width="250" /> <img src="./docs/mobile_Dados_preechidos.png" width="250" />
+<img src="./docs/mobile_Perfil.png" width="250" />
 
 ## 👷 Para la cración de la plataforma tecnológica se utilizó 👷
 
 ### 🔧 Node.js
-
 ### 🔧 React
-
 ### 🔧 Typescript
-
 ### 🔧 TypeORM
-
 ### 🔧 SQLite
-
 ### 🔧 React-Native
-
 ### 🔧 Expo
 
 ## 🕺 Clona este repositorio 🕺
