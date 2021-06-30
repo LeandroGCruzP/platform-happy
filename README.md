@@ -1,6 +1,6 @@
 # 😀 Happy 😀
 
-## ❓ Curiosidad ❓
+## Curiosidad ❓
 
 ### El nombre Happy es una combinación entre felicidad (happy en inglés) y aplicación (h-APP-y).
 
